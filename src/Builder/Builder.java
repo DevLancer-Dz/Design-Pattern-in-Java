@@ -1,6 +1,11 @@
 package Builder;
 
 public class Builder {
+    public static void main(String[] args) {
+        Vehicle build = new Vehicle.VehicleBuilder("engine1", 1).setAirbags(10).build();
+
+        System.out.println(build.getEngine()+"-"+build.getWheel()+"-"+build.getAirbags());
+    }
 }
 
 class Vehicle {
